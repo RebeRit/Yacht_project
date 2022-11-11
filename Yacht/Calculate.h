@@ -3,7 +3,6 @@
 #include <windows.h>
 #include <conio.h>
 #include <array>
-#include "Dice.h"
 
 class Calculate {
 public:

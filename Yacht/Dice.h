@@ -3,41 +3,19 @@
 #include <conio.h>
 #ifndef DICE_H
 
-class Dice {
+class Dice{
 private:
-	int dice_d = 0;
-	int select_reroll = 0;
+	int dice_d;
+	int select_reroll;
 
 public:
-	Dice() {
-		this->dice_d = 0;
-		this->select_reroll = 0;
-	}
+	Dice();
 
-	int reroll_Dice(int dice_d, int select_reroll) {
-		int reroll_d = dice_d;
+	int reroll_Dice(int dice_d, int select_reroll);
 
-		if (select_reroll == 1) {
-			reroll_d = rand() % 6 + 1;
-			return reroll_d;
-		}
-		else {
-			return reroll_d;
-		}
-	}
+	int getEyes();
 
-	int getEyes() {
-		return this->dice_d;
-	}
-
-	void changeRerollSelect() {
-		if (this->select_reroll == 1) {
-			this->select_reroll = 0;
-		}
-		else {
-			this->select_reroll = 1;
-		}
-	}
+	void changeRerollSelect();
 };
 
 #endif

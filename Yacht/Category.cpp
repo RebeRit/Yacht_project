@@ -2,9 +2,7 @@
 #include <windows.h>
 #include <conio.h>
 #include <array>
-#include "Dice.h"
 #include "Category.h"
-#include "Calculate.h"
 
 using namespace std;
 
