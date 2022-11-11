@@ -1,15 +1,11 @@
 #include <iostream>
 #include <windows.h>
 #include <conio.h>
-#include "yacht.h"
-#include "ui.h"
+#include "Yacht.h"
+#include "UI.h"
 #include "Dice.h"
 
 using namespace std;
-
-Yacht::Yacht() {
-	srand((unsigned)time(0));
-}
 
 int Yacht::play_Yacht() {
 	int result = 0;
@@ -18,7 +14,7 @@ int Yacht::play_Yacht() {
 
 	for (int a = 0; a < 12; a++) {
 		for (int b = 0; b <= 4; b++) {
-			Dice_List[b].dice_d = Dice_List[b].reroll_Dice(Dice_List[b].dice_d, Dice_List[b].reroll);
+
 		}
 	}
 

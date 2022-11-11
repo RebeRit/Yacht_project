@@ -1,5 +1,7 @@
 #include <iostream>
 #include <windows.h>
+#include <conio.h>
+#include <array>
 #ifndef YACHT_H
 
 /*
@@ -20,10 +22,14 @@
 -10. Chance : 주사위 5개의 눈의 총 합
 -11. Yahtzee : 주사위 5개의 눈이 모두 같을 때, +50점
 */
-
 class Yacht {
+
 public:
-	Yacht(); //랜덤 시드 설정을 위한 생성자
+
+	Yacht() {
+		srand((unsigned)time(0));
+	}
+		//랜덤 시드 설정을 위한 생성자
 
 	int play_Yacht(); //게임 진행 코드
 
